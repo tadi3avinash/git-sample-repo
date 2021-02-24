@@ -1,0 +1,95 @@
+*.txt
+blah blah2 blah3
+Syntax
+Character : \
+Marks the next character as either a speicail character or a literal
+ex- \.
+
+
+Note - Regular expressions are used for comparing content.
+
+Char: ^
+Desc Matches the beginning of input
+
+Char: $
+Desc: Matches the end of input
+
+Char: *
+Desc: Matches the precedinf character zero or more times.
+
+For example "zo*" mactches eiether "z" or "zooo.."
+
+
+Char: +
+Desc Matches the preceding character one or more times. For example "zo+" matches "zoo" but not "z".
+
+
+Char: ?
+
+Desc: Matches the preceding character zero or one time.
+
+
+Char: .
+Desc: Matches the preceding character excpet a newline character
+
+Char:(pattern)
+Desc: Matches pattern and remembers the match
+
+
+Char: x|y
+
+Desc: Matches either x or y. For example, "z|w" matches "z" or "w"
+
+Char: {n}
+
+Desc: n is a nonnegative integer. Matches exactly n times. For example, "o{2}"
+doesnt match the "o" in Bob, but matches "oo"
+
+Char{n,}
+Desc: n is a nonnegative integer. Matches at least n times.
+
+Char: {n,m}
+Matches at least n and at most m times.
+
+
+Char: [xyz]
+
+Desc A Character set.. matches any one of the enclosed characters
+
+
+Char: [^xyz]
+Desc : A negative character set
+
+Char: [a-z]
+
+Desc; A range of characters. Matches any character in the specified range.
+For example "[a-z]" matches any lower case alphabetic characters in the range "a" through "z".
+
+
+Char: [^a-z]
+Desc: A negative range characters. Matches any character not in the specified range
+
+
+
+Char:\w
+Desc: Matches a word boundary
+
+Char:\W
+Desc: Matches a non-word boundary
+
+
+char: \d
+Desc: Matches a digit character. Equvialent to [0-9]
+
+Char:\D
+Desc: Matches a non-digit character
+Equivalent to [^0-9]
+
+Char: \s
+Desc: Matches any white space,tab.. etc
+
+
+Char: \S
+Desc: Matches any non white space characters
+
+
