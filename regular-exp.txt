@@ -1,5 +1,5 @@
 *.txt
-
+blah2
 Syntax
 Character : \
 Marks the next character as either a speicail character or a literal
